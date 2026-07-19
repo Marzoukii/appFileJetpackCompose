@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.example.myapp"
-    compileSdk = 36
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.example.myapp"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -21,11 +21,11 @@ android {
 
     buildTypes {
         debug {
-            buildConfigField("String", "BASE_URL", "\"http://192.168.1.X:8080/\"")
+            buildConfigField("String", "BASE_URL", "\"10.0.2.2:8080/\"")
         }
         release {
             isMinifyEnabled = false
-            buildConfigField("String", "BASE_URL", "\"http://192.168.1.X:8080/\"")
+            buildConfigField("String", "BASE_URL", "\"10.0.2.2:8080/\"")
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
